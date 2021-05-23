@@ -142,6 +142,8 @@ def fahr_to_celsius(temp_fahrenheit):
   data['YEAR'] = data['TIME_STR'].str.slice(start=0,stop=4)
   data['MONTH'] = data['TIME_STR'].str.slice(start=0,stop=6)
 
+  grouped = data.groupby(['YEAR','MONTH'])
+
 #CAUTION!!! DON'T EDIT THIS PART START
 # This test print should print the length of variable monthly_data
 print(len(monthly_data))
