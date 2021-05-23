@@ -136,6 +136,8 @@ def fahr_to_celsius(temp_fahrenheit):
 
   data['TAVG'] = data['TAVG'].applyy(fahr_to_celsius)
 
+  monthly_data = pd.DataFrame()
+
 #CAUTION!!! DON'T EDIT THIS PART START
 # This test print should print the length of variable monthly_data
 print(len(monthly_data))
