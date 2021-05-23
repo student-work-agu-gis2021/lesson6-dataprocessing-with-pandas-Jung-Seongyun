@@ -150,6 +150,9 @@ def fahr_to_celsius(temp_fahrenheit):
     mean_values = group[mean_col].mean()
     monthly_data = monthly_data.append(mean_values,ignore_index=True)
 
+    new_name = {'TAVG':'temp_celsius'}
+    monthly_data = monthly_data.rename(columns = new_name)
+
 #CAUTION!!! DON'T EDIT THIS PART START
 # This test print should print the length of variable monthly_data
 print(len(monthly_data))
