@@ -134,6 +134,8 @@ def fahr_to_celsius(temp_fahrenheit):
   converted_temp = (temp_fahrenheit - 32) / 1.8
   return converted_temp
 
+  data['TAVG'] = data['TAVG'].applyy(fahr_to_celsius)
+
 #CAUTION!!! DON'T EDIT THIS PART START
 # This test print should print the length of variable monthly_data
 print(len(monthly_data))
