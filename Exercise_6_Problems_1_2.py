@@ -146,6 +146,10 @@ def fahr_to_celsius(temp_fahrenheit):
 
   mean_col = ['TAVG']
 
+  for key, group in grouped:
+    mean_values = group[mean_col].mean()
+    monthly_data = monthly_data.append(mean_values,ignore_index=True)
+
 #CAUTION!!! DON'T EDIT THIS PART START
 # This test print should print the length of variable monthly_data
 print(len(monthly_data))
